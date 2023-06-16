@@ -1,0 +1,28 @@
+GET http://localhost:3000/api/tareas
+
+###
+POST http://localhost:3000/api/tareas
+Content-Type: application/json
+
+{
+    "titulo":"hacer algo 8",
+    "descripcion":"trabajo8",
+    "terminada": true
+}
+
+###
+GET http://localhost:3000/api/tareas/648b9c1c2e80b8797b7fdc8d
+
+###
+DELETE http://localhost:3000/api/tareas/648aa430964bd90e281052c9
+
+###
+GET http://localhost:3000/api/tareas/terminados
+
+###
+PUT http://localhost:3000/api/tareas/648ba37d2f714079ec8ba762
+Content-Type: application/json
+
+{
+    "titulo":"hacer algo 45"
+}
